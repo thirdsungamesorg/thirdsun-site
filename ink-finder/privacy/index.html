@@ -84,7 +84,15 @@
   <h3>3.3 What the app does not collect</h3>
   <p>The app does not collect your name, email address, phone number, postal address, contacts, photos, files, camera or microphone input, precise device location, or payment details. It has no in-app purchases and no chat or social features.</p>
   <h3>3.4 Permissions</h3>
-  <p>The app uses internet access (for ads, analytics and crash reports), network status, vibration (for optional haptic feedback, which you can turn off in Settings) and access to the advertising ID (for ad measurement and, where you allow it, ad personalization).</p>
+  <p>The app asks Android for the permissions below. None of them gives it access to your files, contacts, camera, microphone or location.</p>
+  <ul>
+  <li><strong>Internet access and network status:</strong> to load ads and to send analytics and crash reports.</li>
+  <li><strong>Vibration:</strong> for optional haptic feedback, which you can turn off in Settings.</li>
+  <li><strong>The advertising ID, and Android's ad services for the ad ID, attribution and topics:</strong> for ad measurement and, where you allow it, ad personalization.</li>
+  <li><strong>The install referrer:</strong> tells Firebase Analytics which store page or link led to the install.</li>
+  <li><strong>Keeping the device awake briefly, and running background work:</strong> the analytics and ads libraries use these for their own background tasks, such as sending reports.</li>
+  <li><strong>One permission internal to the app,</strong> which only stops other apps from sending it private messages.</li>
+  </ul>
   <h2>4. How we use information</h2>
   <p>We use the information above to:</p>
   <ul>
