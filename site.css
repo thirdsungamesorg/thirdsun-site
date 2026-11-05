@@ -67,10 +67,25 @@ body.home{
 .doc a{color:var(--deep-sun); text-underline-offset:2px}
 .doc .summary{background:var(--card); border-radius:14px; padding:18px 20px; margin:0 0 8px}
 .doc .summary p{margin:0}
+.doc h3{font-size:16px; font-weight:600; margin:24px 0 4px}
+.doc code{font-size:.9em; background:var(--card); border-radius:4px; padding:1px 5px}
+.doc a{overflow-wrap:anywhere}
+.doc table{width:100%; border-collapse:collapse; margin:12px 0 16px; font-size:15px}
+.doc th,.doc td{border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top}
+.doc th{background:var(--card); font-weight:600}
+.doc td{color:#3A2747}
 .legal-foot{border-top:1px solid var(--line); max-width:720px; margin:0 auto; padding:20px 16px 32px; font-size:13px; color:var(--muted)}
 .legal-foot a{color:var(--muted)}
 
 @media (max-width:480px){
   .foot .sep{display:none}
   .foot{gap:6px 16px}
+}
+@media (max-width:600px){
+  .doc table,.doc tbody,.doc tr,.doc td{display:block}
+  .doc thead{display:none}
+  .doc tr{border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:0 0 12px}
+  .doc td{border:0; border-top:1px solid var(--line)}
+  .doc td:first-child{border-top:0; background:var(--card); font-weight:600}
+  .doc td:not(:first-child)::before{content:attr(data-label); display:block; margin-bottom:2px; font-size:12px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--muted)}
 }
