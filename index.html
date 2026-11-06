@@ -13,9 +13,11 @@
 <main class="hero">
   <div class="lockup">
     <svg class="mark" viewBox="-73 -237.62 310.62 310.62" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Third Sun Games">
-      <circle cx="0" cy="0" r="57" fill="#5A3172"/>
-      <circle cx="56.57" cy="-56.57" r="78" fill="#C296CB" stroke="#2A1236" stroke-width="16"/>
-      <circle cx="121.62" cy="-121.62" r="100" fill="#FF6A13" stroke="#2A1236" stroke-width="16"/>
+      <mask id="mark-gap-sun"><rect x="-73" y="-237.62" width="310.62" height="310.62" fill="#fff"/><circle cx="121.62" cy="-121.62" r="108"/></mask>
+      <mask id="mark-gap-lilac"><rect x="-73" y="-237.62" width="310.62" height="310.62" fill="#fff"/><circle cx="56.57" cy="-56.57" r="86"/></mask>
+      <circle cx="0" cy="0" r="57" fill="#5A3172" mask="url(#mark-gap-lilac)"/>
+      <circle cx="56.57" cy="-56.57" r="70" fill="#C296CB" mask="url(#mark-gap-sun)"/>
+      <circle cx="121.62" cy="-121.62" r="92" fill="#FF6A13"/>
     </svg>
     <div class="wordmark" aria-hidden="true">
       <span class="name">third sun</span>
